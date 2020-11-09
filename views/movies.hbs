@@ -1,9 +1,16 @@
 <h1>IRONHACK CINEMA</h1>
-
-{{#each movies}}
-    <div>
-        <img src={{image}}>
-        {{title}}
-        <a href="/movies/{{_id}}">See More</a>
-    </div>    
-{{/each}}
+<div class="card-container">
+    {{#each movies}}
+        <div class="main-card">
+            <div class="card-img">
+                <img src={{image}}>
+            </div>
+            <div class="card-title">
+                {{title}}
+            </div>
+            <div class="card-link">
+                <a href="/movies/{{_id}}">See More!</a>
+            </div>
+        </div>    
+    {{/each}}
+</div>
